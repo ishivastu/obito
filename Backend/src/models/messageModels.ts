@@ -3,8 +3,8 @@ import mongoose, { Schema, type Document } from "mongoose";
 export interface IMessage extends Document {
   chat: Schema.Types.ObjectId;
   sender: Schema.Types.ObjectId;
-  text: string;
-  createdAt: string;
+  text: String;
+  createdAt: Date;
   updatedAt: Date;
 }
 
